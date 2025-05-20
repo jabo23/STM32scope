@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "STM32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "cStandard": "c17",
+            "cppStandard": "c++98",
+            "intelliSenseMode": "gcc-arm",
+            "configurationProvider": "ms-vscode.makefile-tools",
+            "compilerPath": "/home/jmboyle/STM32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc"
+        }
+    ],
+    "version": 4
+}
