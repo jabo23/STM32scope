@@ -34,8 +34,8 @@ uint16_t seconds = 0;
 void TIM2_IRQHandler(void) {
     GPIOB->ODR ^= GPIO_ODR_ODR_7;
     printf("Time elapsed: %d minutes, %d seconds\r\n", seconds / 60, seconds % 60);
-    printf("Date: %d\r\n", (int) RTC->DR);
-    printf("Time: %d\r\n", (int) RTC->TR);
+    // printf("Date: %d\r\n", (int) RTC->DR);
+    // printf("Time: %d\r\n", (int) RTC->TR);
     TIM2->SR &= ~TIM_SR_UIF;
     seconds++;
 }
